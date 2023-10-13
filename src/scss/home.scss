@@ -93,7 +93,7 @@
       text-align: center;
     }
     .paragraphe {
-      width: 105ch;
+      max-width: 105ch;
       font-family: var(--font);
       color: var(--color-white);
       font-weight: 300;

@@ -26,12 +26,17 @@
      
     .link-container {
         display: flex;
-
         padding: 0 20px;
         list-style: none;
         gap: 2rem;
         margin-right: 1rem;
         align-items: center;
+
+        @media screen and (max-width: 579px) {
+            display: none;
+        }
+            
+        
     }
 
     .link a{
