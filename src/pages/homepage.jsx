@@ -1,6 +1,7 @@
 import "../scss/home.scss";
 import PrimaryButton from "../components/buttons/primary-button";
 import SecondaryButton from "../components/buttons/secondary-button";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   return (
