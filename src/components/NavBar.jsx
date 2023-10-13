@@ -3,6 +3,7 @@ import "../scss/components/navbar.scss";
 import "../scss/root.scss";
 import { NavLink as Link } from "react-router-dom";
 import SecondaryButton from "./buttons/secondary-button.jsx";
+import Burger from "./burger.jsx";
 
 export default function Navbar() {
   return (
@@ -25,7 +26,9 @@ export default function Navbar() {
           );
         })}
       </ul>
+      <Burger />
     </nav>
   );
 }
-// je viens de comprendre ! Par défault il lui donne un id de 0 a X et la je lui redonnais un id de 0 a x par dessus
+
+

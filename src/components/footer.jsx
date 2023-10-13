@@ -4,11 +4,10 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <a href="/" className="footer-logo"></a>
+        <a href="/" className="footer-logo" alt="Logo Officiel de l'association LA CLAC"></a>
         <div className="section">
           <p className="section-title">A propos</p>
           <p className="section-text">
-            {" "}
             L'association LA CLAC est une association à but non lucratif qui
             organise des événements ainsi que des spectacles de varietés les
             deux derniers weekends complet de novembre.
