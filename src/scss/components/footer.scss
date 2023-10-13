@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: var(--color-red-hover);
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .section-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    list-style: none;
+
+    .section-item,
+    a {
+      font-family: var(--font);
+      font-size: 1rem;
+      color: var(--color-white);
+      transition: all 0.15s ease-in-out;
+
+      &:hover {
+        transform: scale(0.9);
+      }
+    }
+  }
+
+  .copyright {
+    font-family: var(--font);
+    font-size: 1rem;
+    color: var(--color-white);
+  }
+}

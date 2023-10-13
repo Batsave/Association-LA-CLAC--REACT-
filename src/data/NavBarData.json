@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "linkname": "home",
+    "linkurl": "/",
+    "btn": false
+  },
+  {
+    "id": 2,
+    "linkname": "séances",
+    "linkurl": "/seances",
+    "btn": false
+  },
+  {
+    "id": 3,
+    "linkname": "contact",
+    "linkurl": "/contact",
+    "btn": false
+  },
+  {
+    "id": 4,
+    "linkname": "newsletter",
+    "linkurl": "/newsletter",
+    "btn": true
+  }
+]

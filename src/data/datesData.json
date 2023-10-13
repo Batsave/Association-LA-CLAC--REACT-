@@ -1,0 +1,52 @@
+[
+    {
+        "id": "Seance1",
+        "day":"Samedi 18 Novembre 2023",
+        "startTime":"20h30",
+        "fullTime": "2h45",
+        "priceChild":"Gratuit (-12 ans)",
+        "priceAdult":"8€",
+        "link":"https://www.helloasso.com/associations/la-clac/evenements/samedi-18-novembre"
+
+    },
+    {
+        "id": "Seance2",
+        "day":"Dimanche 19 Novembre 2023",
+        "startTime":"14h30",
+        "fullTime": "2h45",
+        "priceChild":"Gratuit (-12 ans)",
+        "priceAdult":"8€",
+        "link":"https://www.helloasso.com/associations/la-clac/evenements/dimanche-19-novembre"
+
+    },
+    {
+        "id": "Seance3",
+        "day":"Vendredi 24 Novembre 2023",
+        "startTime":"20h30",
+        "fullTime": "2h45",
+        "priceChild":"3,5€",
+        "priceAdult":"8€",
+        "link":"https://www.helloasso.com/associations/la-clac/evenements/vendredi-24-novembre"
+
+    },
+    {
+        "id": "Seance4",
+        "day":"Samedi 25 Novembre 2023",
+        "startTime":"20h30",
+        "fullTime": "2h45",
+        "priceChild":"3,5€",
+        "priceAdult":"8€",
+        "link":"https://www.helloasso.com/associations/la-clac/evenements/samedi-25-novembre"
+
+    },
+    {
+        "id": "Seance5",
+        "day":"Samedi 19 Novembre 2023",
+        "startTime":"14h30",
+        "fullTime": "2h45",
+        "priceChild":"3,5€",
+        "priceAdult":"8€",
+        "link":"https://www.helloasso.com/associations/la-clac/evenements/dimanche-26-novembre"
+
+    }
+]
