@@ -32,12 +32,14 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+        <div className="spacing"></div>
         </div>
       <div className="footer-section">
         <p className="copyright">
           © 1992-2023 | ASSOCIATION LA CLAC. Tous droits réservés.
         </p>
       </div>
+      
     </footer>
   );
 }

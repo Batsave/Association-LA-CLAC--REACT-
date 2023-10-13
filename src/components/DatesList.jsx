@@ -47,7 +47,7 @@ function DatesList({ data }) {
           btnText="Appeler"
           btnLink="tel:0640235591"
         />
-        <SecondaryButton btnText="Réserver en ligne" btnLink={data.link} />
+        <SecondaryButton btnText="Réserver" btnLink={data.link} />
       </div>
     </div>
   );

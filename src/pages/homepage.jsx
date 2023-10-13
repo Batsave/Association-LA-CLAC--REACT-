@@ -1,50 +1,76 @@
+import { Helmet } from "react-helmet";
+
+//Styles
 import "../scss/home.scss";
+
+//Composants
 import PrimaryButton from "../components/buttons/primary-button";
 import SecondaryButton from "../components/buttons/secondary-button";
-import { Helmet } from "react-helmet";
+import Arguments from "../components/arguments.jsx";
+
+//Data
+import argumentsData from "../data/arguments.json";
 
 const Home = () => {
   return (
     <div>
       <Helmet>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="description" content="Réservez simplement vos places pour l'une de nos séances"/>
-        <meta name="robots" content="index, follow"/>
-        <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
-        <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
-        <link rel="canonical" href="https://www.dev-bsprod.fr/"/>
-        <meta property="og:url" content="https://www.laclac.fr/"/>
-        <meta property="og:site_name" content="La CLAC"/>
-        <meta property="og:locale" content="fr_FR"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="La CLAC"/>
-        <meta property="og:description" content="Réservez simplement vos places pour l'une de nos séances"/>
-        <meta property="og:image" content="https://www.laclac.fr/webp/share-cover.webp"/>
-        <meta property="og:image:secure_url" content="https://www.laclac.fr/webp/share-cover.webp"/>
-        <meta property="og:image:width" content="584"/>
-        <meta property="og:image:height" content="384"/>
-        <meta property="fb:pages" content=""/>
-        <meta property="fb:admins" content=""/>
-        <meta property="fb:app_id" content=""/>
-        <meta name="twitter:card" content="summary"/>
-        <meta name="twitter:site" content=""/>
-        <meta name="twitter:creator" content=""/>
-        <meta name="twitter:title" content="La CLAC"/>
-        <meta name="twitter:description" content="Réservez simplement vos places pour l'une de nos séances"/>
-        <meta name="twitter:image" content="https://www.laclac.fr/webp/share-cover.webp"/>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Réservez simplement vos places pour l'une de nos séances"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="googlebot"
+          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <meta
+          name="bingbot"
+          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <link rel="canonical" href="https://www.laclac.fr/" />
+        <meta property="og:url" content="https://www.laclac.fr/" />
+        <meta property="og:site_name" content="La CLAC" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="La CLAC" />
+        <meta
+          property="og:description"
+          content="Réservez simplement vos places pour l'une de nos séances"
+        />
+        <meta
+          property="og:image"
+          content="https://www.laclac.fr/webp/share-cover.webp"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://www.laclac.fr/webp/share-cover.webp"
+        />
+        <meta property="og:image:width" content="584" />
+        <meta property="og:image:height" content="384" />
+        <meta property="fb:pages" content="" />
+        <meta property="fb:admins" content="" />
+        <meta property="fb:app_id" content="" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="" />
+        <meta name="twitter:creator" content="" />
+        <meta name="twitter:title" content="La CLAC" />
+        <meta
+          name="twitter:description"
+          content="Réservez simplement vos places pour l'une de nos séances"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.laclac.fr/webp/share-cover.webp"
+        />
         <title>LA CLAC</title>
-        
       </Helmet>
 
-
-
       <header className="header-container">
-        <video className="bg-video" autoPlay loop muted>
-          <source
-            src="/mp4/main-background-video.mp4"
-            type="video/mp4"
-          />
+        <video className="bg-video" autoPlay={true} loop={true} controls={false} playsInline muted  >
+          <source src="/mp4/main-background-video.mp4" type="video/mp4" />
         </video>
         <div className="head-bloc">
           <a className="social-button" href="https://linktr.ee/assolaclac">
@@ -57,7 +83,7 @@ const Home = () => {
             unique et familial.
           </h2>
           <div className="btn-bloc">
-            <PrimaryButton
+            <PrimaryButton 
               btnText="Réserver par téléphone"
               btnLink="tel:0640235591"
             />
@@ -84,7 +110,11 @@ const Home = () => {
           </div>
           <div className="content">
             <div className="arguments-list">
-
+              {argumentsData.map((argIndex) => {
+                return (
+              <Arguments  argIndex={argIndex}/>
+              );
+            })}
             </div>
           </div>
         </div>

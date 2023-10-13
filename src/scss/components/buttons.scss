@@ -1,7 +1,7 @@
 .primary-button {
   display: flex;
   padding: 0.5rem 1rem;
-  width: 100%;
+  
   background-color: var(--color-white);
   border-radius: 0.6rem;
   justify-content: center;
@@ -10,7 +10,7 @@
   font-family: var(--font);
   color: var(--color-black);
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: transform 0.1s ease-in-out;
    
   &:hover {
@@ -22,7 +22,6 @@
 .secondary-button {
   display: flex;
   padding: 0.5rem 1rem;
-  width: 100%;
   background-color: var(--color-red);
   border-radius: 0.6rem;
   justify-content: center;
@@ -31,7 +30,7 @@
   font-family: var(--font);
   color: var(--color-white);
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: transform 0.1s ease-in-out;
    
   &:hover {

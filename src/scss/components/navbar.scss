@@ -8,6 +8,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    
 
      .logo {
         background-image: url(/svg/association-la-clac-logo.svg);
@@ -43,15 +44,22 @@
         display: flex;
         width: fit-content;
         font-family: var(--font);
-        font-size: 1.2rem;
-        color: #eaeaea;
-        text-decoration: none;
+        font-weight: 300;
+        font-size: 1rem;
+        color:var(--color-white);
         transition: all 0.15s ease-in-out;
+        
         
 
         &:hover {
             transform: scale(0.9);
         }
+       
+    }
+    .active {
+        text-decoration-line: underline;
+        text-underline-offset: 0.5rem ;
+        font-weight: 300;
     }
 }
 

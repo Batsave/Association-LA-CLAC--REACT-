@@ -1,0 +1,33 @@
+[
+    {
+       "icon":"./svg/icons/agenda.svg",
+       "title":"5 représentations",
+       "about":"Chaque année, nous montons sur les planches les deux derniers weekends complets de Novembre."
+    },
+    {
+        "icon":"./svg/icons/time.svg",
+        "title":"2h45 de show",
+        "about":"Installez-vous et profitez de plus de 2h45de show conçu par nos bénévoles."
+     },
+     {
+        "icon":"./svg/icons/quality.svg",
+        "title":"Qualité recherchée",
+        "about":"Nos techniciens travaillent chaque année à améliorer la qualité du spectacle pour vous faire vivre un show unique."
+     },
+     {
+        "icon":"./svg/icons/billets.svg",
+        "title":"Réservation en ligne",
+        "about":"Envie de gagner du temps ? Réservez vos places par internet et présentez les directement à l’entrée."
+     },
+     {
+        "icon":"./svg/icons/pmr.svg",
+        "title":"Accès PMR",
+        "about":"Nous nous efforçons de rendre notre spectacle accessible aux personnes à mobilité réduite. Pour plus d’informations, contactez-nous."
+     },
+     {
+        "icon":"./svg/icons/creditcard.svg",
+        "title":"Paiement par carte",
+        "about":"Ne vous encombrez plus de vos espèces ! Nous prenons désormais la carte bancaire pour les paiements."
+     }
+     
+]

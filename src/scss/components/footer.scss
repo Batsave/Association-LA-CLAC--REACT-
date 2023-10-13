@@ -5,8 +5,7 @@
   align-items: center;
   bottom: 0;
   left: 0;
-  width: 100vw;
-  height: max;
+  width: 100%;
   background-color: var(--color-red-hover);
   padding: 2rem 0;
   gap: 2rem;
@@ -74,6 +73,11 @@
       }
     }
   }
+  .spacing {
+    min-width: 150px;
+    width: 10%;
+  }
+  
   .copyright {
     font-family: var(--font);
     font-size: 0.8rem;
