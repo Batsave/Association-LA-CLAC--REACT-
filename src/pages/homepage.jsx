@@ -112,7 +112,7 @@ const Home = () => {
             <div className="arguments-list">
               {argumentsData.map((argIndex) => {
                 return (
-              <Arguments  argIndex={argIndex}/>
+              <Arguments key={argIndex.id} argIndex={argIndex}/>
               );
             })}
             </div>

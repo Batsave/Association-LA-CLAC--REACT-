@@ -18,7 +18,7 @@ export default function Burger() {
             return navdataIndex.btn === false ? (
               <li key={navdataIndex.id} className="link"  >
                 <Link to={navdataIndex.linkurl} 
-                exact activeClassName="active">{navdataIndex.linkname}</Link>
+                >{navdataIndex.linkname}</Link>
               </li>
             ) : (
               <li className="link" key={navdataIndex.id} to={navdataIndex.link}>
