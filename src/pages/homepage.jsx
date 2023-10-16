@@ -4,12 +4,14 @@ import { Helmet } from "react-helmet";
 import "../scss/home.scss";
 
 //Composants
+import DatesList from "../components/DatesList.jsx";
 import PrimaryButton from "../components/buttons/primary-button";
 import SecondaryButton from "../components/buttons/secondary-button";
 import Arguments from "../components/arguments.jsx";
 
 //Data
 import argumentsData from "../data/arguments.json";
+import datesdata from "../data/datesData.json";
 
 const Home = () => {
   return (
@@ -119,6 +121,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };
