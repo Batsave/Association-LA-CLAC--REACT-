@@ -12,9 +12,13 @@
         <meta name="twitter:image" content="https://www.laclac.fr/webp/share-cover.webp"/>
     <link rel="icon" type="image/svg" href="/svg/association-la-clac-logo.svg" />
     <title>LA CLAC</title>
+    <meta name="theme-color" content="#202020"/>
+    <link rel="manifest" href="/pwa/manifest.json">
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script src="/pwa/sw.js" type="module"></script>
+    <script type="module" src="/pwa/pwa.js"></script>
   </body>
 </html>

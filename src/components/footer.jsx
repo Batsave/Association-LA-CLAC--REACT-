@@ -6,9 +6,11 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <a
-          href="/"
+          href="/home"
           className="footer-logo"
-          alt="Logo Officiel de l'association LA CLAC"
+          alt="Logo"
+          aria-label="Logo Officiel de l'association LA CLAC"
+          title="Aller à la page d'accueil"
         ></a>
         <div className="section">
           <p className="section-title">Informations</p>
@@ -35,16 +37,17 @@ export default function Footer() {
           <p className="section-title">Légale</p>
           <ul className="section-list">
             <li className="section-item">
-              <Link to="/mentionslegales">Mentions Légales</Link>
+              <Link to="/mentionslegales" title="Aller à la page Mentions Légales">Mentions Légales</Link>
             </li>
             <li className="section-item">
-              <Link to="/cgv">CGV</Link>
+              <Link to="/cgv"
+          title="Aller à la page Conditions Générales de Vente">CGV</Link>
             </li>
             <li className="section-item">
-              <Link to="/cookies">Cookies</Link>
+              <Link to="/cookies" title="Aller à la page Cookies">Cookies</Link>
             </li>
             <li className="section-item">
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact" title="Aller à la page Contact">Contact</Link>
             </li>
           </ul>
         </div>

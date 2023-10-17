@@ -16,11 +16,5 @@
     "linkname": "contact",
     "linkurl": "/contact",
     "btn": false
-  },
-  {
-    "id": 4,
-    "linkname": "newsletter",
-    "linkurl": "/newsletter",
-    "btn": true
   }
 ]
