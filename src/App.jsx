@@ -9,6 +9,9 @@ import "./scss/App.scss";
 import Home from "./pages/homepage.jsx";
 import Representations from "./pages/seances.jsx";
 import Contact from "./pages/contact.jsx";
+import MentionsLegales from "./pages/legal.jsx";
+import CGV from "./pages/cgv.jsx";
+import Cookies from "./pages/cookies.jsx";
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
         <Route path="" element={<Home />} />
         <Route path="seances" element={<Representations />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="mentionslegales" element={<MentionsLegales />} />
+        <Route path="cgv" element={<CGV />} />
+        <Route path="cookies" element={<Cookies />} />
       </Routes>
       <Footer />
     </Router>

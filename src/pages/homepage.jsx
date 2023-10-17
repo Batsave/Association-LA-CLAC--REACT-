@@ -104,7 +104,7 @@ const Home = () => {
             <p className="paragraphe">
               Créée en 1988, mais officiellement association indépendante en
               1992, l'association La CLAC (Chapelle Largeau Association
-              Culturelle) regroupe, en 2022, plus de 120 adhérents tous
+              Culturelle) regroupe, en 2023, plus de 120 adhérents tous
               bénévoles. Nous organisons notre spectacle de variétés annuel les
               deux derniers weekends complets de novembre. Réunissant plusieurs
               générations d'acteurs allant de 10 ans à 80 ans.

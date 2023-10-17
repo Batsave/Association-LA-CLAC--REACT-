@@ -1,10 +1,27 @@
 import "../scss/components/footer.scss";
+import { NavLink as Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <a href="/" className="footer-logo" alt="Logo Officiel de l'association LA CLAC"></a>
+        <a
+          href="/"
+          className="footer-logo"
+          alt="Logo Officiel de l'association LA CLAC"
+        ></a>
+        <div className="section">
+          <p className="section-title">Informations</p>
+          <p className="section-text">
+            Association LA CLAC
+            <br />
+            laclac.fr
+            <br />
+            0640235591
+            <br />
+            contactassolaclac@gmail.com
+          </p>
+        </div>
         <div className="section">
           <p className="section-title">A propos</p>
           <p className="section-text">
@@ -18,27 +35,26 @@ export default function Footer() {
           <p className="section-title">Légale</p>
           <ul className="section-list">
             <li className="section-item">
-              <a href="#">Mentions Légales</a>
+              <Link to="/mentionslegales">Mentions Légales</Link>
             </li>
             <li className="section-item">
-              <a href="#">CVG</a>
+              <Link to="/cgv">CGV</Link>
             </li>
             <li className="section-item">
-              <a href="#">Cookies</a>
+              <Link to="/cookies">Cookies</Link>
             </li>
             <li className="section-item">
-              <a href="#">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
         <div className="spacing"></div>
-        </div>
+      </div>
       <div className="footer-section">
         <p className="copyright">
           © 1992-2023 | ASSOCIATION LA CLAC. Tous droits réservés.
         </p>
       </div>
-      
     </footer>
   );
 }
