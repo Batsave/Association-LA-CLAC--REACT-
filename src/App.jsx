@@ -12,6 +12,7 @@ import Contact from "./pages/contact.jsx";
 import MentionsLegales from "./pages/legal.jsx";
 import CGV from "./pages/cgv.jsx";
 import Cookies from "./pages/cookies.jsx";
+import NotFound from "./pages/notfound.jsx";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="mentionslegales" element={<MentionsLegales />} />
         <Route path="cgv" element={<CGV />} />
         <Route path="cookies" element={<Cookies />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>

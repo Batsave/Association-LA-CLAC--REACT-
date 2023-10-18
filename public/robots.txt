@@ -1,4 +1,4 @@
-Sitemap: https://www.epimeleia-massage.fr/sitemap.xml
+Sitemap: https://www.laclac.fr/sitemap.xml
 
 User-agent: AlphaSeoBot 
 User-agent: AlphaSeoBot-SA 

@@ -8,17 +8,20 @@ import Burger from "./burger.jsx";
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <div className="logo"></div>
+      <Link to="/#home" className="logo"
+      alt="Logo"
+      aria-label="Logo Officiel de l'association LA CLAC"
+      title="Aller à la page d'accueil"
+      ></Link>
       <ul className="link-container">
         {navbardata.map((navdataIndex) => {
           return navdataIndex.btn === false ? (
-            <li key={navdataIndex.id} className="link"  >
-              <Link to={navdataIndex.linkurl} 
-              >{navdataIndex.linkname}</Link>
+            <li key={navdataIndex.id} className="link">
+              <Link to={navdataIndex.linkurl}>{navdataIndex.linkname}</Link>
             </li>
           ) : (
             <li className="link" key={navdataIndex.id} to={navdataIndex.link}>
-              <SecondaryButton 
+              <SecondaryButton
                 btnText={navdataIndex.linkname}
                 btnLink={navdataIndex.linkurl}
               />
@@ -30,5 +33,3 @@ export default function Navbar() {
     </nav>
   );
 }
-
-

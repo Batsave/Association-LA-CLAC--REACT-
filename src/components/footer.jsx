@@ -5,13 +5,13 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <a
-          href="/home"
+        <Link
+          to="/#home"
           className="footer-logo"
           alt="Logo"
           aria-label="Logo Officiel de l'association LA CLAC"
           title="Aller à la page d'accueil"
-        ></a>
+        ></Link>
         <div className="section">
           <p className="section-title">Informations</p>
           <p className="section-text">

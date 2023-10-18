@@ -1,17 +1,11 @@
 const CACHE_NAME = 'V1';
 const assetsToCache = [
-  '/',
+  '../',
   '../index.html',
   '../.htaccess',
   './manifest.json',
-  
-  
-  //CSS
   '../app.css',
-  //JS
   '../app.js',
-  
-  //SVG
   '../svg/association-la-clac-logo.svg',
   '../svg/icons/agenda.svg',
   '../svg/icons/billets.svg',
@@ -19,20 +13,16 @@ const assetsToCache = [
   '../svg/icons/pmr.svg',
   '../svg/icons/quality.svg',
   '../svg/icons/time.svg',
-
-  //MP4
   '../mp4/main-background-video.mp4',
-
-  //PNG
   '../png/logo192x192.png',
-  '../png/logo512x512.png',
+  '../png/logo512x512.png'
 ];
 
 // Installation du service worker et mise en cache des ressources initiales
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
-      return cache.addAll(assetsToCache);
+      return cache.add(assetsToCache);
     })
   );
 });

@@ -45,8 +45,14 @@
     color: var(--color-white);
     transition: all 0.15s ease-in-out;
 
+
+
     &:hover {
       transform: scale(0.9);
+    }
+
+    @media screen and (max-width: 579px) {
+      font-size: 1.5rem;
     }
   }
   .active {
@@ -63,6 +69,7 @@
 }
 
 @media screen and (max-width: 579px) {
+  
   .menuToggle {
     float: left;
     position: relative;
@@ -141,9 +148,10 @@
     overflow-x: scroll;
   }
   .menu li {
+    
     padding: 10px 0;
     font-size: 1.2rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font);
     font-weight: 500;
   }
   .menuToggle input:checked ~ ul {

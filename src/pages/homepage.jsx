@@ -57,7 +57,7 @@ const Home = () => {
         <meta property="fb:app_id" content="" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="" />
-        <meta name="twitter:creator" content="" />
+        <meta name="twitter:creator" content="Association La CLAC" />
         <meta name="twitter:title" content="La CLAC" />
         <meta
           name="twitter:description"
@@ -70,7 +70,7 @@ const Home = () => {
         <title>LA CLAC</title>
       </Helmet>
 
-      <header className="header-container">
+      <header className="header-container" id="home">
         <video className="bg-video" autoPlay={true} loop={true} controls={false} playsInline muted  >
           <source src="/mp4/main-background-video.mp4" type="video/mp4" />
         </video>
